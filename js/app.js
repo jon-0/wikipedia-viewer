@@ -34,7 +34,7 @@ $('#mag').on('click', function(){
         
         // attach link to each result
         $('.search-result').each(function(index){
-          $(this).on("click vclick", function(event){
+          $(this).on("click", function(event){
             window.open("https://en.wikipedia.org/wiki/" + encodeURIComponent(results.query.search[index].title));
           });
         }); // end 'each' method
